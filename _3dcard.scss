@@ -1,0 +1,179 @@
+////////////////3d card///////////////////////////////
+.threeD-card {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.flip-card {
+    width: 400px;
+    max-width: 100%;
+    height: 500px;
+    perspective: 1000px;
+    /* 3D effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    // backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg) scale(1.05);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Front */
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Back */
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+.flip-card-back {
+    background-color: #ffffff;
+    color: #000000;
+    transform: rotateY(180deg);
+    /* flip back side */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    // transform: rotateY(180deg);
+    box-sizing: border-box;
+    // position: relative;
+}
+
+.card-back h1 {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+//////////////////////////////////////////////////////crad-back-first////////////////////////////////////////////////////////
+.card-back-first h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.card-back-first .apply {
+    border: none;
+    background: #3700ff;
+    color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-radius: 22px;
+    margin-left: 40px;
+    margin-top: 200px;
+}
+
+.card-back-first p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-back-first .place {
+    display: flex;
+    gap: 70px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+////////////////////////////////////////////////////////ends/////////////////////////////////////////////////////////////////////
+///card-back-three////////////////////////////////////////////////////////
+.card-back-three h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.card-back-three .apply {
+    border: none;
+    background: #3700ff;
+    color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-radius: 22px;
+    margin-left: 40px;
+    margin-top: 200px;
+}
+
+.card-back-three p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-back-three .place {
+    display: flex;
+    gap: 70px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+//////////////////////////////////////////////////////////////////////////////ends////////////////////////////////////////////////////////
+
+.card-back p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-back .place {
+    display: flex;
+    gap: 70px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.place h7 {
+    font-size: 15px;
+    color: #ffffff;
+    background: #414141;
+    width: 65px;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.place h8 {
+    font-size: 15px;
+    color: rgb(0, 38, 255);
+}
+
+
+.card-back .apply {
+    border: none;
+    background: #3700ff;
+    color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-radius: 22px;
+    margin-left: 40px;
+    margin-top: 200px;
+}
+
+.card-back:hover .apply {
+    background: rgb(0, 38, 255);
+    transform: scale(0.5);
+    position: absolute;
+}

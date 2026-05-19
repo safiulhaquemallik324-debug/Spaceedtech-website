@@ -1,0 +1,100 @@
+.fourth-container {
+    width: 100%;
+    height: 900px;
+    background: #03030a;
+}
+
+
+
+
+
+
+
+
+.sucess-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.sucess-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sucess-text p {
+    font-size: 15px;
+}
+
+////////////card -two//////////////////.slider {
+.slider-two {
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 100px;
+    height: auto;
+    padding: 50px 20px;
+}
+
+.track-two {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+.scnd-card {
+    width: 400px;
+    height: 550px;
+    border-radius: 16px;
+    background: #abc2d1;
+    display: inline-block;
+    font-size: 20px;
+    color: #03030a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scnd-card:hover {
+    transform: translateY(-20px) scale(1.08);
+    box-shadow: 0 10px 10px rgb(36, 72, 105);
+}
+
+.scnd-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+    padding-top: 0px;
+    border-radius: 16px 16px 0px 0px;
+
+}
+
+.worker-text h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    padding-top: 20px;
+}
+
+.worker-text h2 {
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.worker-text p {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    font-weight: 600;
+}

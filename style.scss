@@ -1,0 +1,759 @@
+@import "_banner.scss";
+@import "_col-one.scss";
+@import "_row.scss";
+@import "_sixth.scss";
+@import "_three-container.scss";
+@import "_from.scss";
+@import "_footer.scss";
+@import "_3dcard.scss";
+@import "_card.scss";
+@import "_duration.scss";
+@import "_fifth.scss";
+@import "_next-container.scss";
+@import "_fourth-section.scss";
+
+
+
+.hero-container {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  background: #050510;
+}
+
+.hero-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  filter: blur(80px);
+  opacity: 0.5;
+  z-index: 1;
+  animation: blobMove 25s infinite alternate ease-in-out;
+}
+
+.blob1 {
+  background: linear-gradient(120deg, #1450c0, #01b7ff, #002cee);
+  top: 10%;
+  left: -10%;
+}
+
+.blob2 {
+  background: #072eda;
+  bottom: 20%;
+  right: -10%;
+  animation-duration: 30s;
+}
+
+/* animation */
+@keyframes blobMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(120px, -60px) scale(1.2);
+  }
+
+  66% {
+    transform: translate(-100px, 80px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) {
+  .enroll {
+    margin-top: 40px;
+  }
+
+  .hero-container {
+    max-width: 100%;
+    min-height: 1500px;
+    position: relative;
+    overflow: hidden;
+    background: #050510;
+  }
+
+  .blob {
+    position: absolute;
+    min-width: 30px;
+    min-height: 20px;
+    filter: blur(80px);
+    opacity: 0.5;
+    z-index: 1;
+    animation: blobMove 25s infinite alternate ease-in-out;
+  }
+
+  .blob1 {
+    background: linear-gradient(120deg, #1450c0, #01b7ff, #002cee);
+    top: 0%;
+    left: 10%;
+    min-width: 30px;
+    min-height: 20px;
+  }
+
+  .blob2 {
+    background: #072eda;
+    bottom: 20%;
+    right: -10%;
+    animation-duration: 30s;
+  }
+
+  .header {
+    color: #fff;
+    font-weight: 600;
+    padding-top: 200px;
+    font-size: 34px;
+    font-family: poppins, sans-serif;
+    padding-left: 30px;
+  }
+
+  .custom-text {
+    font-size: 13px;
+    padding-left: 30px;
+  }
+
+  .explore {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 30px;
+  }
+
+  .learn {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .from {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .heading-name {
+    padding: 0;
+  }
+
+  .submition {
+    width: 350px;
+    height: 50px;
+    align-items: center;
+    margin-top: 110px;
+    font-size: 19px;
+  }
+
+  .next-container {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .blob-1 {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 60%;
+    left: 10%;
+  }
+
+  .about-text {
+    font-size: 30px;
+  }
+
+  .about-paragraph {
+    font-size: 12px;
+  }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .card {
+    padding: 10px;
+    border-radius: 16px;
+    width: 250px;
+    height: 140px;
+  }
+
+  .student h2 {
+    font-size: 30px;
+  }
+
+  .course h2 {
+    font-size: 30px;
+  }
+
+  .success h2 {
+    font-size: 30px;
+  }
+
+  .stats {
+    margin-left: 20px;
+  }
+
+  .partner-text h2 {
+    font-size: 35px;
+  }
+
+  .partner-text p {
+    font-size: 13px;
+  }
+
+  .fourth-container {
+    width: 100%;
+    height: 800px;
+    background: #03030a;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .buttons .uni {
+    font-size: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .buttons .isro {
+    font-size: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+
+  }
+
+  .buttons .aero {
+    font-size: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .buttons .manu {
+    font-size: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .buttons .it {
+    font-size: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .buttons .gov {
+    font-size: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .sucess-text h1 {
+    font-size: 30px;
+  }
+
+  .sucess-text p {
+    font-size: 12px;
+  }
+
+  .fifth-container {
+    width: 100%;
+    height: 700px;
+  }
+
+  .slider-two {
+    width: 100%;
+    height: 500px;
+  }
+
+  .scnd-card {
+    width: 250px;
+    height: 370px;
+  }
+
+  .track-two {
+    height: 400px;
+  }
+
+  .scnd-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: fill;
+    padding-top: 0px;
+  }
+
+  .worker-text h1 {
+    font-size: 20px;
+  }
+
+  .worker-text h2 {
+    font-size: 12px;
+  }
+
+  .worker-text p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .main-card {
+    width: 300px;
+    height: 250px;
+    font-size: 14px;
+  }
+
+  .program-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .program-text p {
+    font-size: 12px;
+  }
+
+  .third-card h1 {
+    font-size: 19px;
+    padding-top: 10px;
+  }
+
+  .third-card h2 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .apply2 {
+    margin-top: 15px;
+  }
+
+  .apply3 {
+    margin-top: 15px;
+  }
+
+  .sixth-container {
+    width: 100%;
+    height: auto;
+    background: #03030a;
+  }
+
+  .sixth-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .sixth-header p {
+    font-size: 12px;
+  }
+
+  .flip-card {
+    width: 100%;
+    max-width: 320px;
+    height: 420px;
+  }
+
+  .threeD-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .card-back h9 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg) scale(1);
+  }
+
+  .row2 {
+    padding-top: 40px;
+  }
+
+  .card-back-first h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .card-back-first p {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  .card-back-first .apply {
+    margin-top: 140px;
+  }
+
+  .card-back-three h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .card-back-three p {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  .card-back-three .apply {
+    margin-top: 140px;
+  }
+
+  .card-back h1 {
+    padding-top: 20px;
+  }
+
+  .card-back p {
+    padding-top: 8px;
+  }
+
+  .card-back .apply {
+    margin-top: 140px;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    background: #000000;
+  }
+
+  .col-3 h1 {
+    font-size: 17px;
+  }
+
+  .col-3 p {
+    padding-top: 1px;
+    font-size: 12px;
+  }
+
+  .copyright p {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .slider-three {
+    margin-top: 100px;
+  }
+}
+
+/* ===== TABLET (768px - 1024px) ===== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+    max-width: 100%;
+    min-height: 1200px;
+    background: #050510;
+  }
+
+  .header {
+    font-size: 42px;
+    padding-top: 180px;
+    padding-left: 50px;
+  }
+
+  .custom-text {
+    font-size: 15px;
+    padding-left: 50px;
+  }
+
+  .explore {
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    margin-left: 50px;
+  }
+
+  .learn {
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .from {
+    max-width: 500px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  .submition {
+    width: 420px;
+    height: 55px;
+    margin-top: 120px;
+    font-size: 21px;
+  }
+
+  .next-container {
+    width: 100%;
+    height: 900px;
+  }
+
+  .about-text {
+    font-size: 36px;
+  }
+
+  .about-paragraph {
+    font-size: 14px;
+  }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 18px;
+    width: 100%;
+    height: 160px;
+  }
+
+  .student h2,
+  .course h2,
+  .success h2 {
+    font-size: 36px;
+  }
+
+  .partner-text h2 {
+    font-size: 40px;
+  }
+
+  .partner-text p {
+    font-size: 15px;
+  }
+
+  .fourth-container {
+    width: 100%;
+    height: auto;
+    background: #03030a;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .buttons .uni,
+  .buttons .isro,
+  .buttons .aero,
+  .buttons .manu,
+  .buttons .it,
+  .buttons .gov {
+    font-size: 13px;
+    padding: 10px 22px;
+  }
+
+  .sucess-text h1 {
+    font-size: 36px;
+  }
+
+  .sucess-text p {
+    font-size: 14px;
+  }
+
+  .fifth-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-two {
+    width: 100%;
+    height: 520px;
+  }
+
+  .scnd-card {
+    width: 280px;
+    height: 390px;
+  }
+
+  .track-two {
+    height: 420px;
+  }
+
+  .scnd-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: fill;
+  }
+
+  .worker-text h1 {
+    font-size: 24px;
+  }
+
+  .worker-text h2 {
+    font-size: 14px;
+  }
+
+  .worker-text p {
+    font-size: 14px;
+  }
+
+  .main-card {
+    width: 340px;
+    height: 270px;
+    font-size: 15px;
+  }
+
+  .program-text h1 {
+    font-size: 36px;
+  }
+
+  .program-text p {
+    font-size: 14px;
+  }
+
+  .third-card h1 {
+    font-size: 22px;
+  }
+
+  .third-card h2 {
+    font-size: 14px;
+  }
+
+  .sixth-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .sixth-header h1 {
+    font-size: 36px;
+  }
+
+  .sixth-header p {
+    font-size: 14px;
+  }
+
+  .flip-card {
+    width: 280px;
+    height: 420px;
+  }
+
+  .threeD-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .col-3 h1 {
+    font-size: 19px;
+  }
+
+  .col-3 p {
+    font-size: 13px;
+  }
+
+  .copyright p {
+    font-size: 15px;
+  }
+
+  .slider-three {
+    margin-top: 80px;
+  }
+}
+
+/* ===== LARGE SCREEN (1024px - 1440px) ===== */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .hero-container {
+    min-height: 100vh;
+  }
+
+  .header {
+    font-size: 52px;
+  }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .threeD-card {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .flip-card {
+    width: 300px;
+    height: 430px;
+  }
+
+  .fourth-container {
+    height: auto;
+  }
+
+  .sixth-container {
+    height: auto;
+  }
+}
+
+/* ===== EXTRA LARGE SCREEN (1440px+) ===== */
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    min-height: 100vh;
+  }
+
+  .header {
+    font-size: 64px;
+  }
+
+  .custom-text {
+    font-size: 18px;
+  }
+
+  .about-text {
+    font-size: 48px;
+  }
+
+  .flip-card {
+    width: 340px;
+    height: 450px;
+  }
+
+  .threeD-card {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+
+/*# sourceMappingURL=style.scss.map */

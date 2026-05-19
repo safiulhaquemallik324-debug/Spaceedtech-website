@@ -1,0 +1,138 @@
+.three-container {
+    width: 100%;
+    height: auto;
+    background-color: #03030a;
+}
+
+.partner-text {
+    text-align: center;
+    color: #fff;
+}
+
+.partner-text h2 {
+    font-size: 45px;
+    padding-top: 90px;
+    font-weight: 700;
+}
+
+.partner-text p {
+    font-size: 17px;
+}
+
+/////button///////////////////////////////////////////////////////////////////////
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.buttons .uni {
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgb(209, 209, 209, 0.1);
+    color: #fff;
+}
+
+.uni:hover {
+    transform: scale(1.1);
+    background: #0c0c0c;
+}
+
+.buttons .isro {
+    border: none;
+    border-radius: 30px;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgb(209, 209, 209, 0.1);
+    color: #fff;
+}
+
+.isro:hover {
+    transform: scale(1.1);
+    background: #0c0c0c;
+}
+
+.buttons .aero {
+    border: none;
+    border-radius: 30px;
+    width: 190px;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.2s ease-in;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.aero:hover {
+    transform: scale(1.1);
+    background: #0c0c0c;
+}
+
+.buttons .manu {
+    border: none;
+    border-radius: 30px;
+    width: 140px;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgb(209, 209, 209, 0.1);
+    color: #fff;
+}
+
+.manu:hover {
+    transform: scale(1.1);
+    background: #0c0c0c;
+}
+
+.buttons .it {
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+
+.it:hover {
+    transform: scale(1.1);
+    background: #0c0c0c;
+}
+
+
+.buttons .gov {
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    color: #fff;
+}
+
+.gov:hover {
+    transform: scale(1.1);
+    background: #0c0c0c;
+}
